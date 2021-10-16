@@ -1,5 +1,18 @@
 
-
-java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(Ηµν‘8ΨΩ²Θ/
+^
+java:S1854"<Remove this useless assignment to local variable "nameSort".(σ¥ε‚ϊÿÿÿÿ8¦πυ¶Θ/
+U
+java:S1854"8Remove this useless assignment to local variable "file".(Υ’Ή8§πυ¶Θ/
+Y
+java:S1854"<Remove this useless assignment to local variable "nameSort".(Ύ­“ΰ8¨πυ¶Θ/
+J
+java:S1481"-Remove this unused "nameSort" local variable.(Ύ­“ΰ8Ηπυ¶Θ/
+F
+java:S1481")Remove this unused "file" local variable.(Υ’Ή8ΰπυ¶Θ/
+N
+java:S1172",Remove this unused method parameter "names".(ί§ψÿÿÿÿÿ8ϊπυ¶Θ/
 H
-java:S1068	"&Remove this unused "in" private field.(„ο”Έϊÿÿÿÿ8«ΨΩ²Θ/
+java:S1068"&Remove this unused "in" private field.(„ο”Έϊÿÿÿÿ8«ΨΩ²Θ/
+r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(σ»‰Νϋÿÿÿÿ8™ρυ¶Θ/
+~
+java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "sort".(γΎγ½ϊÿÿÿÿ8ρυ¶Θ/

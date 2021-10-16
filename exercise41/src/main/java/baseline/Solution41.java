@@ -3,29 +3,46 @@
  *  Copyright 2021 Nicholas Lopes
  */
 package baseline;
-import java.io.File;
+import java.io.*;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Formatter;
 import java.util.Scanner;
 
 public class Solution41 {
-    private static final Scanner in = new Scanner(System.in);
-
-    public static void main(String[] args) {
-        ArrayList<String> Names = new ArrayList<>();
-        ArrayList<String> nameSort = new ArrayList<>();
-
-        File file = new File("exercise41_input.txt");
+    public static void main(String[] args) throws IOException {
         //declare varables
+        ArrayList<String> Names = new ArrayList<String>();
+
+        File inFile = new File("data/exercise41_input.txt");
+
+        int lineCounter = 0;
         //load names from file into arraylist
-        //pass arraylist to sortAlpha method
-        nameSort = sortAlpha(Names);
+        try(Scanner in = new Scanner(inFile)){
+            while(in.hasNextLine()){
+                Names.add(in.nextLine());
+                lineCounter++;
+            }
+
+        }
+        catch (FileNotFoundException e){
+            System.out.print("File not found!");
+        }
+        catch (Exception e){
+            System.out.print("Error has occurred!");
+        }
+
+        //sort Arraylist using method
+        Collections.sort(Names);
+
         //print sortedlist into new txt file
-
+        Formatter out = new Formatter("docs/exercise41_output");
+        out.format("Total of %d names\n-----------------\n", lineCounter);
+        for(int i = 0; i < lineCounter; i++){
+            out.format("%s  \n", Names.get(i));
+        }
+        out.close();
     }
 
-    private static ArrayList<String> sortAlpha(ArrayList<String> names) {
-        ArrayList<String> sort = new ArrayList<>();
-        //Sort through names list alphabetically and return sorted list
-        return sort;
-    }
+
 }
