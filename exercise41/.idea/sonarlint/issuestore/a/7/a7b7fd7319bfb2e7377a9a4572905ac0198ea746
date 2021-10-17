@@ -1,18 +1,10 @@
 
-^
-java:S1854"<Remove this useless assignment to local variable "nameSort".(ó¥å‚úÿÿÿÿ8¦ğõ¶È/
-U
-java:S1854"8Remove this useless assignment to local variable "file".(Õ’¹8§ğõ¶È/
-Y
-java:S1854"<Remove this useless assignment to local variable "nameSort".(¾­“à8¨ğõ¶È/
-J
-java:S1481"-Remove this unused "nameSort" local variable.(¾­“à8Çğõ¶È/
-F
-java:S1481")Remove this unused "file" local variable.(Õ’¹8àğõ¶È/
-N
-java:S1172",Remove this unused method parameter "names".(ßŸ§øÿÿÿÿÿ8úğõ¶È/
-H
-java:S1068"&Remove this unused "in" private field.(„ï”¸úÿÿÿÿ8«ØÙ²È/
-r	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ó»‰Íûÿÿÿÿ8™ñõ¶È/
-~
-java:S1488"\Immediately return this expression instead of assigning it to the temporary variable "sort".(ã¾ã½úÿÿÿÿ8ñõ¶È/
+U	java:S106"9Replace this use of System.out or System.err by a logger.(¦æòµ8¹şÜÈ/
+U	java:S106 "9Replace this use of System.out or System.err by a logger.(‡ ¬ß8¼şÜÈ/
+n
+java:S3457("Q%n should be used in place of \n to produce the platform-specific line separator.(×±õ8ÅşÜÈ/
+n
+java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(ç”Àı8ÏşÜÈ/
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(·Ôì8şÜÈ/
+m	java:S117"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(·Ôì8šşÜÈ/
