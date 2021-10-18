@@ -1,0 +1,13 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution42 {
+String[] load
+String[] result
+String[] temp
+int lines
+int num
+File file
+}
+
+@enduml
