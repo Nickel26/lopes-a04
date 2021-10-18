@@ -5,7 +5,6 @@
 package baseline;
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Solution42 {
@@ -13,7 +12,8 @@ public class Solution42 {
         //initialize starting variables
         String[] load = new String[100];
         String[] result = new String[100];
-        int lines = 0, num = 0;
+        int lines = 0;
+        int num = 0;
         File file = new File("data/exercise42_input.txt");
         //load files contents into string
         try(Scanner in = new Scanner(file)){
@@ -30,16 +30,15 @@ public class Solution42 {
         }
         //pass string to split method which returns string array
         for(int i = 0; i < lines; i++){
-            String temp[] = load[i].split(",");
+            String[] temp = load[i].split(",");
             for(int j = 0; j < 3; j++, num++) {
                 result[num] = temp[j];
             }
         }
         //display parsed data
-        System.out.format("\tLast \t\tfirst \t\tsalary\n" +
-                "-------------------------------------\n");
+        System.out.format("\tLast \t\tfirst \t\tsalary%n -------------------------------------%n");
         for(int i = 0; i < num; i += 3){
-            System.out.format("%10s %10s %10s\n", result[i], result[i+1], result[i+2]);
+            System.out.format("%10s %10s %10s%n", result[i], result[i+1], result[i+2]);
         }
     }
 }

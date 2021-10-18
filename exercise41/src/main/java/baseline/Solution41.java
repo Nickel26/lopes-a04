@@ -11,8 +11,8 @@ import java.util.Scanner;
 
 public class Solution41 {
     public static void main(String[] args) throws IOException {
-        //declare varables
-        ArrayList<String> Names = new ArrayList<String>();
+        //declare variables
+        ArrayList<String> names = new ArrayList<>();
 
         File inFile = new File("data/exercise41_input.txt");
 
@@ -20,7 +20,7 @@ public class Solution41 {
         //load names from file into arraylist
         try(Scanner in = new Scanner(inFile)){
             while(in.hasNextLine()){
-                Names.add(in.nextLine());
+                names.add(in.nextLine());
                 lineCounter++;
             }
 
@@ -33,13 +33,13 @@ public class Solution41 {
         }
 
         //sort Arraylist using method
-        Collections.sort(Names);
+        Collections.sort(names);
 
         //print sortedlist into new txt file
-        Formatter out = new Formatter("docs/exercise41_output");
-        out.format("Total of %d names\n-----------------\n", lineCounter);
+        Formatter out = new Formatter("data/exercise41_output");
+        out.format("Total of %d names%n-----------------%n", lineCounter);
         for(int i = 0; i < lineCounter; i++){
-            out.format("%s  \n", Names.get(i));
+            out.format("%s  %n", names.get(i));
         }
         out.close();
     }

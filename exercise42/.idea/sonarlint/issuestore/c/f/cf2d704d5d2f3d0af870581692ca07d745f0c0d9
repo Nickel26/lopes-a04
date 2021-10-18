@@ -1,15 +1,0 @@
-
-<
-java:S1659"!Declare "num" on a separate line.(ä®ŒËùÿÿÿÿ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(¦æòµ
-N	java:S106"9Replace this use of System.out or System.err by a logger.(‡ ¬ß
-E
-java:S1197!"*Move the array designators [] to the type.(þ­¹¿þÿÿÿÿ
-N	java:S106'"9Replace this use of System.out or System.err by a logger.(øƒÙ–
-O
-java:S6126'"2Replace this String concatenation with Text block.(øƒÙ–8›‡’ŒÉ/
-s
-java:S3457*"Q%n should be used in place of \n to produce the platform-specific line separator.(µ”“Üøÿÿÿÿ8ÝË‘ŒÉ/
-S	java:S106*"9Replace this use of System.out or System.err by a logger.(µ”“Üøÿÿÿÿ
-F
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

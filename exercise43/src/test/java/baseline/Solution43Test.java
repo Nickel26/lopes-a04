@@ -15,7 +15,8 @@ class Solution43Test {
         boolean expected = true;
         String name = "webtest";
         String author = "tester";
-        Solution43 test = new Solution43();
+        Solution43 test;
+        test = new Solution43();
         String path = "data/test/";
 
         test.makeDir(path, name, author);
