@@ -1,0 +1,15 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Solution43 {
+String name
+String author
+String javaFile
+String cssFile
+String path
+makeDir()
+makeJava()
+makeCss()
+}
+
+@enduml
